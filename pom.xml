@@ -109,6 +109,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                </configuration>
 			</plugin>
 			<plugin>
 				<artifactId>kotlin-maven-plugin</artifactId>
@@ -145,6 +148,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-
 </project>
