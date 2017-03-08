@@ -1,4 +1,4 @@
-package io.gefangshuai
+package io.github.gefangshuai
 
 import org.junit.Test
 import org.junit.runner.RunWith
