@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-	<groupId>io.gefangshuai</groupId>
-	<artifactId>spring-kotlin-demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+    <groupId>io.gefangshuai</groupId>
+    <artifactId>spring-kotlin-demo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
 
-	<name>spring-kotlin-demo</name>
-	<description>Demo project for Spring Boot With Kotlin</description>
+    <name>spring-kotlin-demo</name>
+    <description>Demo project for Spring Boot With Kotlin</description>
 
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.2.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.2.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.7</java.version>
-		<kotlin.version>1.1.0</kotlin.version>
-	</properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.7</java.version>
+        <kotlin.version>1.1.0</kotlin.version>
+    </properties>
     <repositories>
         <repository>
             <id>clojars.org</id>
             <url>http://clojars.org/repo</url>
         </repository>
     </repositories>
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
             <!--<exclusions>-->
-                <!--<exclusion>-->
-                    <!--<groupId>org.springframework.boot</groupId>-->
-                    <!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
-                <!--</exclusion>-->
-            <!--</exclusions>-->
-		</dependency>
-        <!--<dependency>-->
+            <!--<exclusion>-->
             <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-jetty</artifactId>-->
+            <!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
+            <!--</exclusion>-->
+            <!--</exclusions>-->
+        </dependency>
+        <!--<dependency>-->
+        <!--<groupId>org.springframework.boot</groupId>-->
+        <!--<artifactId>spring-boot-starter-jetty</artifactId>-->
         <!--</dependency>-->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-		</dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+        </dependency>
         <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-freemarker</artifactId>
@@ -73,16 +73,17 @@
             <artifactId>tomcat-embed-jasper</artifactId>
             <scope>provided</scope>
         </dependency>
-		<dependency>
-			<groupId>org.jetbrains.kotlin</groupId>
-			<artifactId>kotlin-stdlib</artifactId>
-			<version>${kotlin.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.jetbrains.kotlin</groupId>
-			<artifactId>kotlin-reflect</artifactId>
-			<version>${kotlin.version}</version>
-		</dependency>
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-stdlib</artifactId>
+            <version>${kotlin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-reflect</artifactId>
+            <version>${kotlin.version}</version>
+        </dependency>
+
 
         <dependency>
             <groupId>postgresql</groupId>
@@ -95,57 +96,63 @@
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
         </dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
-	<build>
-		<sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
-		<testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
+    <build>
+        <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
+        <testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <fork>true</fork>
                 </configuration>
-			</plugin>
-			<plugin>
-				<artifactId>kotlin-maven-plugin</artifactId>
-				<groupId>org.jetbrains.kotlin</groupId>
-				<version>${kotlin.version}</version>
-				<configuration>
-					<compilerPlugins>
-						<plugin>spring</plugin>
-					</compilerPlugins>
-				</configuration>
-				<executions>
-					<execution>
-						<id>compile</id>
-						<phase>compile</phase>
-						<goals>
-							<goal>compile</goal>
-						</goals>
-					</execution>
-					<execution>
-						<id>test-compile</id>
-						<phase>test-compile</phase>
-						<goals>
-							<goal>test-compile</goal>
-						</goals>
-					</execution>
-				</executions>
-				<dependencies>
-					<dependency>
-						<groupId>org.jetbrains.kotlin</groupId>
-						<artifactId>kotlin-maven-allopen</artifactId>
-						<version>${kotlin.version}</version>
-					</dependency>
-				</dependencies>
-			</plugin>
-		</plugins>
-	</build>
+            </plugin>
+            <plugin>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-maven-plugin</artifactId>
+                <version>${kotlin.version}</version>
+                <configuration>
+                    <compilerPlugins>
+                        <plugin>jpa</plugin><!-- 引入对jpa的支持，能够对model类变成生成默认无参构造 -->
+                        <plugin>spring</plugin>
+                    </compilerPlugins>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>compile</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>test-compile</id>
+                        <phase>test-compile</phase>
+                        <goals>
+                            <goal>test-compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.jetbrains.kotlin</groupId>
+                        <artifactId>kotlin-maven-allopen</artifactId>
+                        <version>${kotlin.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.jetbrains.kotlin</groupId>
+                        <artifactId>kotlin-maven-noarg</artifactId>
+                        <version>${kotlin.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
 </project>

@@ -1,5 +1,6 @@
 package io.github.gefangshuai.model
 
+import java.io.Serializable
 import javax.persistence.*
 
 /**
@@ -8,9 +9,10 @@ import javax.persistence.*
 @Entity
 @Table(name = "customer")
 data class Customer (
-        @Id @GeneratedValue(strategy = GenerationType.AUTO) var id: Int?,
+        @Id @GeneratedValue(strategy = GenerationType.AUTO)
+        var id: Int?,
         var firstName: String?,
         var lastName: String?
-        ){
-    constructor() : this(null, null, null)  // Spring 需要
+        ): Serializable{
+//    constructor() : this(null, null, null)  // Spring 需要
 }
